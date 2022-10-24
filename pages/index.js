@@ -8,6 +8,7 @@ import { BiCodeBlock } from 'react-icons/bi';
 import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
 import { useState } from 'react';
 import Image from 'next/image';
+import resume from "../public/Edwin-Ng-Resume.pdf";
 import me from '../public/me.jpg';
 import dashboard1 from '../public/discord-bot-dashboard-1.jpg';
 import portfolio from '../public/portfolio-website.jpg';
@@ -37,7 +38,7 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:fill-yellow-300" />
               </li>
               <li>
-                <a className="bg-gradient-to-r from-blue-400 to-cyan-600 text-white px-4 py-2 rounded-md ml-8" href="/resume">Resume</a>
+                <a className="bg-gradient-to-r from-blue-400 to-cyan-600 text-white px-4 py-2 rounded-md ml-8" href={resume} >Resume</a>
               </li>
             </ul>
           </nav>
@@ -62,8 +63,8 @@ export default function Home() {
 
         <section>
           <div className="text-center">
-            <h2 className="font-sans font-semibold text-3xl py-2 text-cyan-500">Skills</h2>
-            <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">Here are some of the <span className="text-cyan-500">Skills</span>, <span className="text-cyan-500">Programming Languages</span> and <span className="text-cyan-500">Tools</span> that I am familiar with.</p>
+            <h2 className="font-sans font-semibold text-3xl py-2 text-blue-gray dark:text-cyan-500">Skills</h2>
+            <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">Here are some of the <span className="text-blue-gray dark:text-cyan-500">Skills</span>, <span className="text-blue-gray dark:text-cyan-500">Programming Languages</span> and <span className="text-blue-gray dark:text-cyan-500">Tools</span> that I am familiar with.</p>
           </div>
 
           <div className="lg:flex gap-8">
@@ -136,8 +137,8 @@ export default function Home() {
 
         <section>
           <div className="text-center">
-            <h2 className="font-sans font-semibold text-3xl py-2 text-cyan-500">Projects</h2>
-            <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">Here are some of the <span className="text-cyan-500">projects</span> that I have built.</p>
+            <h2 className="font-sans font-semibold text-3xl py-2 text-blue-gray dark:text-cyan-500">Projects</h2>
+            <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">Here are some of the <span className="text-blue-gray dark:text-cyan-500">projects</span> that I have built.</p>
           </div>
           <div>
             <div className="grid gap-10 mb-10 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 ">

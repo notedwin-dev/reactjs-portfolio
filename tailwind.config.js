@@ -11,7 +11,13 @@ module.exports = {
         burtons: "burtons"
       },
       colors: {
-        'blue-gray': "#6699CC"
+        'blue-gray': {
+          100: "#6699CC",
+          200: "#5783AE",
+          300: "#486D91",
+          400: "#3A5774",
+          500: "#2B4157"
+        }
       },
     },
   },
