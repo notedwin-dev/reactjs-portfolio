@@ -8,7 +8,6 @@ import { BiCodeBlock } from 'react-icons/bi';
 import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
 import { useState } from 'react';
 import Image from 'next/image';
-import resume from "../public/Edwin-Ng-Resume.pdf";
 import me from '../public/me.jpg';
 import dashboard1 from '../public/discord-bot-dashboard-1.jpg';
 import portfolio from '../public/portfolio-website.jpg';
@@ -38,7 +37,7 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:fill-yellow-300" />
               </li>
               <li>
-                <a className="bg-gradient-to-r from-blue-400 to-cyan-600 text-white px-4 py-2 rounded-md ml-8" href={resume} >Resume</a>
+                <a className="bg-gradient-to-r from-blue-400 to-cyan-600 text-white px-4 py-2 rounded-md ml-8" href="../public/Edwin-Ng-Resume.pdf" >Resume</a>
               </li>
             </ul>
           </nav>
