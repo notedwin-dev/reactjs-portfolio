@@ -45,7 +45,7 @@ export default function Home() {
             <Image src={me} className="mx-auto rounded-full w-80 h-80" alt='' />
           </div>
           <div className="text-center p-10">
-            <h2 className="font-sans text-5xl py-2 text-cyan-500">Edwin Ng</h2>
+            <h2 className="font-sans text-5xl py-2 text-blue-gray">Edwin Ng</h2>
             <h3 className="font-sans text-2xl py-2 dark:text-white">Back-End Developer and University Student.</h3>
             <p className="font-sans leading-8 text-gray-600 dark:text-gray-300">Currently working on multiple Github Repositories such as discord-ws and autocode-discordjs.</p>
           </div>
