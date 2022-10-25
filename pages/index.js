@@ -6,7 +6,7 @@ import { MdOutlineWeb } from 'react-icons/md';
 import { TbApi } from 'react-icons/tb';
 import { BiCodeBlock } from 'react-icons/bi';
 import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import me from '../public/me.jpg';
 import dashboard1 from '../public/discord-bot-dashboard-1.jpg';
@@ -19,9 +19,27 @@ export default function Home() {
   let cards = "text-center shadow-xl bg-gradient-to-b from-sky-100 to-slate-100 shadow-sky-200 p-10 rounded-xl my-10 dark:shadow-sky-700 dark:from-sky-200 dark:to-slate-200"
   let tag = "text-sm inline-flex items-center font-sans font-semibold leading-sm px-3 py-1 bg-slate-100 text-sky-500 rounded-full m-1 border-lg border-2 border-blue-400"
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(null);
+
+  useEffect(() => {
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setDarkMode('dark')
+    } else {
+      setDarkMode('light')
+    }
+  }, [])
+
+  useEffect(() => {
+    if (darkMode === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode])
+
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <Head>
         <title>Edwin Ng&apos;s Portfolio</title>
         <meta name="description" content="A Next.js Portfolio built by and built for Edwin Ng, aka NotEdwin." />
@@ -35,7 +53,7 @@ export default function Home() {
             <h1 className="text-xl font-burtons dark:text-white">Edwin Ng</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:fill-yellow-300" />
+                <BsFillMoonStarsFill onClick={() => setDarkMode(darkMode === "dark" ? "light" : "dark")} className="cursor-pointer text-2xl dark:fill-yellow-300" />
               </li>
               <li>
                 <a className="bg-gradient-to-r from-blue-400 to-cyan-600 text-white px-4 py-2 rounded-md ml-8" href="https://github.com/Edwin15857/reactjs-portfolio/raw/main/pages/Edwin-Ng-Resume.pdf" >Resume</a>
@@ -212,29 +230,29 @@ export default function Home() {
             <div className="flex flex-wrap m-15">
               <div class="flex-col relative m-5">
                 <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Quick Links</h4>
-                <ul class="list-none text-sm">
-                  <li class="dark:text-white"><a class="footer-link" href="https://notedwin.co">Portfolio</a></li>
-                  <li class="dark:text-white"><a class="footer-link" href="https://fiverr.com/edwin_2004">Services</a></li>
+                <ul className="list-none text-sm">
+                  <li className="dark:text-white"><a href="https://notedwin.co">Portfolio</a></li>
+                  <li className="dark:text-white"><a href="https://fiverr.com/edwin_2004">Services</a></li>
                 </ul>
               </div>
-              <div class="flex-col relative m-5">
+              <div className="flex-col relative m-5">
                 <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Developers</h4>
-                <ul class="list-none text-sm">
-                  <li class="dark:text-white"><a class="footer-link" href="https://github.com/Edwin15857">GitHub</a></li>
+                <ul className="list-none text-sm">
+                  <li className="dark:text-white"><a href="https://github.com/Edwin15857">GitHub</a></li>
 
                 </ul>
               </div>
               <div className="flex-col relative m-5">
                 <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Legal</h4>
-                <ul class="list-none text-sm">
-                  <li class="dark:text-white"><a class="footer-link" href="https://notedwin.co/privacy">Privacy Policy</a></li>
-                  <li class="dark:text-white"><a class="footer-link" href="mailto:privacy@notedwin.co">Privacy Concerns</a></li>
+                <ul className="list-none text-sm">
+                  <li className="dark:text-white"><a href="https://notedwin.co/privacy">Privacy Policy</a></li>
+                  <li className="dark:text-white"><a href="mailto:privacy@notedwin.co">Privacy Concerns</a></li>
                 </ul>
               </div>
-              <div class="flex-col relative m-5">
+              <div className="flex-col relative m-5">
                 <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Contact</h4>
-                <ul class="list-none text-sm">
-                  <li class="dark:text-white"><a class="footer-link" href="mailto:info@notedwin.co">info@notedwin.co</a></li>
+                <ul classNames="list-none text-sm">
+                  <li className="dark:text-white"><a href="mailto:info@notedwin.co">info@notedwin.co</a></li>
                 </ul>
               </div>
             </div>
