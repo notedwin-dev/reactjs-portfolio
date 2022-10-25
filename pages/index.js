@@ -150,7 +150,7 @@ export default function Home() {
                 <p className="text-center dark:text-white">A Discord Bot Dashboard Web Application created using Autocode.</p>
 
                 <div>
-                  <h1 className="text-xl inline-flex text-cyan-500">Tags:</h1>
+                  <h1 className="font-semibold text-xl inline-flex text-cyan-500">Tags:</h1>
                   <div className={tag}>Node.js</div>
                   <div className={tag}>lib</div>
                   <div className={tag}>MongoDB</div>
@@ -168,7 +168,7 @@ export default function Home() {
                 <p className="text-center dark:text-white">A Portfolio Website Template created as beginners tutorial on Autocode.</p>
 
                 <div>
-                  <h1 className="text-xl inline-flex text-cyan-500">Tags:</h1>
+                  <h1 className="font-semibold text-xl inline-flex text-cyan-500">Tags:</h1>
                   <div className={tag}>HTML</div>
                   <div className={tag}>CSS</div>
                   <div className={tag}>JavaScript</div>
@@ -183,7 +183,7 @@ export default function Home() {
                 <p className="text-center dark:text-white">Allows developers to easily implement Discord Gateway without worrying about the backend.</p>
 
                 <div>
-                  <h1 className="text-xl inline-flex text-cyan-500">Tags:</h1>
+                  <h1 className="font-semibold text-xl inline-flex text-cyan-500">Tags:</h1>
                   <div className={tag}>Node.js</div>
                   <div className={tag}>JSON</div>
                   <div className={tag}>ws</div>
@@ -198,7 +198,7 @@ export default function Home() {
                 <p className="text-center dark:text-white">Created to make support for discord.js possible on Autocode&apos;s serverless environment.</p>
 
                 <div>
-                  <h1 className="text-xl inline-flex text-cyan-500">Tags:</h1>
+                  <h1 className="font-semibold text-xl inline-flex text-cyan-500">Tags:</h1>
                   <div className={tag}>Node.js</div>
                   <div className={tag}>lib</div>
                 </div>
@@ -211,39 +211,39 @@ export default function Home() {
           <div class="  rounded-xl items-center flex justify-center h-40">
             <div className="flex flex-wrap m-15">
               <div class="flex-col relative m-5">
-                <h4 className="font-sans font-bold text-xl">Quick Links</h4>
+                <h4 className="font-sans font-bold text-xl dark:text-white">Quick Links</h4>
                 <ul class="list-none text-sm">
-                  <li class="footer-link-item"><a class="footer-link" href="https://notedwin.co">Portfolio</a></li>
-                  <li class="footer-link-item"><a class="footer-link" href="https://fiverr.com/edwin_2004">Services</a></li>
+                  <li class="dark:text-white"><a class="footer-link" href="https://notedwin.co">Portfolio</a></li>
+                  <li class="dark:text-white"><a class="footer-link" href="https://fiverr.com/edwin_2004">Services</a></li>
                 </ul>
               </div>
               <div class="flex-col relative m-5">
-                <h4 className="font-sans font-bold text-xl">Developers</h4>
+                <h4 className="font-sans font-bold text-xl dark:text-white">Developers</h4>
                 <ul class="list-none text-sm">
-                  <li class="footer-link-item"><a class="footer-link" href="https://github.com/Edwin15857">GitHub</a></li>
+                  <li class="dark:text-white"><a class="footer-link" href="https://github.com/Edwin15857">GitHub</a></li>
 
                 </ul>
               </div>
               <div className="flex-col relative m-5">
-                <h4 className="font-sans font-bold text-xl">Legal</h4>
+                <h4 className="font-sans font-bold text-xl dark:text-white">Legal</h4>
                 <ul class="list-none text-sm">
-                  <li class="footer-link-item"><a class="footer-link" href="https://notedwin.co/privacy">Privacy Policy</a></li>
-                  <li class="footer-link-item"><a class="footer-link" href="mailto:privacy@notedwin.co">Privacy Concerns</a></li>
+                  <li class="dark:text-white"><a class="footer-link" href="https://notedwin.co/privacy">Privacy Policy</a></li>
+                  <li class="dark:text-white"><a class="footer-link" href="mailto:privacy@notedwin.co">Privacy Concerns</a></li>
                 </ul>
               </div>
               <div class="flex-col relative m-5">
-                <h4 className="font-sans font-bold text-xl">Contact</h4>
+                <h4 className="font-sans font-bold text-xl dark:text-white">Contact</h4>
                 <ul class="list-none text-sm">
-                  <li class="footer-link-item"><a class="footer-link" href="mailto:info@notedwin.co">info@notedwin.co</a></li>
+                  <li class="dark:text-white"><a class="footer-link" href="mailto:info@notedwin.co">info@notedwin.co</a></li>
                 </ul>
               </div>
             </div>
             <div className="justify-center">
-              <a className="mx-5 mb-5" href="https://youtube.com/@NotEdwinOfficial"><SiYoutube /></a>
+              <a className="mx-5 mb-5 dark:text-white" href="https://youtube.com/@NotEdwinOfficial"><SiYoutube /></a>
 
-              <a className="mx-5 mb-5" href="https://instagram.com/edwin.ngggggggg"><SiInstagram /></a>
+              <a className="mx-5 mb-5 dark:text-white" href="https://instagram.com/edwin.ngggggggg"><SiInstagram /></a>
 
-              <a className="mx-5 mb-5" href="https://github.com/Edwin15857"><SiGithub /></a>
+              <a className="mx-5 mb-5 dark:text-white" href="https://github.com/Edwin15857"><SiGithub /></a>
             </div>
           </div>
         </footer>
