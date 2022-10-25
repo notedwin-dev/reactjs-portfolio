@@ -211,28 +211,28 @@ export default function Home() {
           <div class="  rounded-xl items-center flex justify-center h-40">
             <div className="flex flex-wrap m-15">
               <div class="flex-col relative m-5">
-                <h4 className="font-sans font-bold text-xl dark:text-white">Quick Links</h4>
+                <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Quick Links</h4>
                 <ul class="list-none text-sm">
                   <li class="dark:text-white"><a class="footer-link" href="https://notedwin.co">Portfolio</a></li>
                   <li class="dark:text-white"><a class="footer-link" href="https://fiverr.com/edwin_2004">Services</a></li>
                 </ul>
               </div>
               <div class="flex-col relative m-5">
-                <h4 className="font-sans font-bold text-xl dark:text-white">Developers</h4>
+                <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Developers</h4>
                 <ul class="list-none text-sm">
                   <li class="dark:text-white"><a class="footer-link" href="https://github.com/Edwin15857">GitHub</a></li>
 
                 </ul>
               </div>
               <div className="flex-col relative m-5">
-                <h4 className="font-sans font-bold text-xl dark:text-white">Legal</h4>
+                <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Legal</h4>
                 <ul class="list-none text-sm">
                   <li class="dark:text-white"><a class="footer-link" href="https://notedwin.co/privacy">Privacy Policy</a></li>
                   <li class="dark:text-white"><a class="footer-link" href="mailto:privacy@notedwin.co">Privacy Concerns</a></li>
                 </ul>
               </div>
               <div class="flex-col relative m-5">
-                <h4 className="font-sans font-bold text-xl dark:text-white">Contact</h4>
+                <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Contact</h4>
                 <ul class="list-none text-sm">
                   <li class="dark:text-white"><a class="footer-link" href="mailto:info@notedwin.co">info@notedwin.co</a></li>
                 </ul>
