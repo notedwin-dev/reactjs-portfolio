@@ -227,7 +227,7 @@ export default function Home() {
             </div >
           </div >
         </section >
-        <footer className="h-56">
+        <footer className="md:h-40 lg:h-40">
           <div class="  rounded-xl items-center flex justify-center h-40">
             <div className="flex flex-wrap m-15">
               <div class="flex-col relative m-5">
