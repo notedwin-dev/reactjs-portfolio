@@ -13,6 +13,7 @@ import dashboard1 from '../public/discord-bot-dashboard-1.jpg';
 import portfolio from '../public/portfolio-website.jpg';
 import ws from '../public/discord-ws.png';
 import acode_djs from '../public/autocode-discordjs.png';
+import autocode from '../public/autocode.svg';
 
 
 export default function Home() {
@@ -69,12 +70,13 @@ export default function Home() {
             <p className="font-sans leading-8 text-gray-600 dark:text-gray-300">Currently working on multiple Github Repositories such as discord-ws and autocode-discordjs.</p>
           </div>
           <div className="text-3xl flex justify-center gap-10">
+            <a href='https://autocode.com/notedwin' target="blank"><Image src={autocode} alt=''></Image></a>
 
-            <a href="https://github.com/Edwin15857"><AiFillGithub className="dark:fill-white" /></a>
+            <a href="https://github.com/Edwin15857" target="blank"><AiFillGithub className="dark:fill-white" /></a>
 
-            <a href="https://www.linkedin.com/in/edwin-ng-1aa705210"><AiFillLinkedin className="dark:fill-white" /></a>
+            <a href="https://www.linkedin.com/in/edwin-ng-1aa705210" target="blank"><AiFillLinkedin className="dark:fill-white" /></a>
 
-            <a href="https://www.youtube.com/channel/UCL4zxBUM-m-5NL79joSnsdA"><AiFillYoutube className="dark:fill-white" /></a>
+            <a href="https://link.notedwin.co/tutorials-youtube" target="blank"><AiFillYoutube className="dark:fill-white" /></a>
 
           </div>
         </section>
@@ -161,7 +163,7 @@ export default function Home() {
           <div>
             <div className="grid gap-10 mb-10 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 ">
               <div id="dashboard">
-                <a href="https://notedwin.autocode.dev/discord-bot-dashboard@dev/">
+                <a href="https://notedwin.autocode.dev/discord-bot-dashboard@dev/" target="blank">
                   <Image src={dashboard1} alt='' className="rounded-xl" />
                 </a>
                 <h3 className="font-bold text-center text-blue-gray-100 dark:text-cyan-500"> Discord Bot Dashboard </h3>
@@ -179,7 +181,7 @@ export default function Home() {
 
               </div>
               <div id="portfolio">
-                <a href="https://notedwin.co">
+                <a href="https://notedwin.co" target="blank">
                   <Image src={portfolio} alt='' className="rounded-xl"></Image>
                 </a>
                 <h3 className="font-bold text-center text-blue-gray-100 dark:text-cyan-500"> Portfolio Website </h3>
@@ -194,7 +196,7 @@ export default function Home() {
 
               </div>
               <div id="websocket">
-                <a href='https://www.github.com/Edwin15857/discord-ws'>
+                <a href='https://www.github.com/Edwin15857/discord-ws' target="blank">
                   <Image src={ws} alt='' className="rounded-xl"></Image>
                 </a>
                 <h3 className="font-bold text-center text-blue-gray-100 dark:text-cyan-500"> Discord WebSocket </h3>
@@ -209,7 +211,7 @@ export default function Home() {
 
               </div>
               <div id="discord.js">
-                <a href='https://www.github.com/Edwin15857/autocode-discordjs'>
+                <a href='https://www.github.com/Edwin15857/autocode-discordjs' target="blank">
                   <Image src={acode_djs} alt='' className="rounded-xl"></Image>
                 </a>
                 <h3 className="font-bold text-center text-blue-gray-100 dark:text-cyan-500"> Autocode Discord.js </h3>
@@ -225,43 +227,45 @@ export default function Home() {
             </div >
           </div >
         </section >
-        <footer className="h-40">
+        <footer className="h-56">
           <div class="  rounded-xl items-center flex justify-center h-40">
             <div className="flex flex-wrap m-15">
               <div class="flex-col relative m-5">
                 <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Quick Links</h4>
                 <ul className="list-none text-sm">
-                  <li className="dark:text-white"><a href="https://notedwin.co">Portfolio</a></li>
-                  <li className="dark:text-white"><a href="https://fiverr.com/edwin_2004">Services</a></li>
+                  <li className="dark:text-white"><a href="https://notedwin.co" target="blank">Portfolio</a></li>
+                  <li className="dark:text-white"><a href="https://fiverr.com/edwin_2004" target="blank">Services</a></li>
                 </ul>
               </div>
               <div className="flex-col relative m-5">
                 <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Developers</h4>
                 <ul className="list-none text-sm">
-                  <li className="dark:text-white"><a href="https://github.com/Edwin15857">GitHub</a></li>
-
+                  <li className="dark:text-white"><a href="https://github.com/Edwin15857" target="blank">GitHub</a></li>
+                  <li className="dark:text-white"><a href="https://link.notedwin.co/tutorials-youtube" target="blank">YouTube</a></li>
+                  <li className='dark:text-white'><a href="https://autocode.com/notedwin/snippets/" target="blank">Autocode Snippets</a></li>
+                  <li className='dark:text-white'><a href="https://autocode.com/notedwin/app/" target="blank">Autocode Apps</a></li>
                 </ul>
               </div>
               <div className="flex-col relative m-5">
                 <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Legal</h4>
                 <ul className="list-none text-sm">
-                  <li className="dark:text-white"><a href="https://notedwin.co/privacy">Privacy Policy</a></li>
+                  <li className="dark:text-white"><a href="https://notedwin.co/privacy-policy" target="blank">Privacy Policy</a></li>
                   <li className="dark:text-white"><a href="mailto:privacy@notedwin.co">Privacy Concerns</a></li>
                 </ul>
               </div>
               <div className="flex-col relative m-5">
                 <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Contact</h4>
-                <ul classNames="list-none text-sm">
+                <ul className="list-none text-sm">
                   <li className="dark:text-white"><a href="mailto:info@notedwin.co">info@notedwin.co</a></li>
                 </ul>
               </div>
             </div>
             <div className="justify-center">
-              <a className="mx-5 mb-5 dark:text-white" href="https://youtube.com/@NotEdwinOfficial"><SiYoutube /></a>
+              <a className="mx-5 mb-5 dark:text-white" href="https://youtube.com/@NotEdwinOfficial" target="blank"><SiYoutube /></a>
 
-              <a className="mx-5 mb-5 dark:text-white" href="https://instagram.com/edwin.ngggggggg"><SiInstagram /></a>
+              <a className="mx-5 mb-5 dark:text-white" href="https://instagram.com/edwin.ngggggggg" target="blank"><SiInstagram /></a>
 
-              <a className="mx-5 mb-5 dark:text-white" href="https://github.com/Edwin15857"><SiGithub /></a>
+              <a className="mx-5 mb-5 dark:text-white" href="https://github.com/Edwin15857" target="blank"><SiGithub /></a>
             </div>
           </div>
         </footer>
