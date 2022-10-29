@@ -12,19 +12,19 @@ body {
 
 @media (min-width:360px) and (min-height:740px){
   footer {
-    height: 17rem;
+    height: 15rem;
   }
 } 
 
 @media (min-width:375px) and (min-height:667px) {
   footer {
-    height: 17rem;
+    height: 15rem;
   }
 }
 
 @media (min-width:414px) and (min-height:736px) {
   footer {
-    height: 17rem;
+    height: 15rem;
   }
 }
 
