@@ -19,6 +19,7 @@ import autocode from '../public/autocode.svg';
 export default function Home() {
   let cards = "text-center shadow-xl bg-gradient-to-b from-sky-100 to-slate-100 shadow-sky-200 p-10 rounded-xl my-10 dark:shadow-sky-700 dark:from-sky-200 dark:to-slate-200"
   let tag = "text-sm inline-flex items-center font-sans font-semibold leading-sm px-3 py-1 bg-slate-100 text-sky-500 rounded-full m-1 border-lg border-2 border-blue-400"
+  let hover = "hover:p-2 hover:shadow-md hover:shadow-slate-400 hover:rounded-md"
 
   const [darkMode, setDarkMode] = useState(null);
 
@@ -162,7 +163,7 @@ export default function Home() {
           </div>
           <div>
             <div className="grid gap-10 mb-10 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 ">
-              <div id="dashboard">
+              <div id="dashboard" className={hover}>
                 <a href="https://notedwin.autocode.dev/discord-bot-dashboard@dev/" target="blank">
                   <Image src={dashboard1} alt='' className="rounded-xl" />
                 </a>
@@ -180,7 +181,7 @@ export default function Home() {
                 </div>
 
               </div>
-              <div id="portfolio">
+              <div id="portfolio" className={hover}>
                 <a href="https://notedwin.co" target="blank">
                   <Image src={portfolio} alt='' className="rounded-xl"></Image>
                 </a>
@@ -195,7 +196,7 @@ export default function Home() {
                 </div>
 
               </div>
-              <div id="websocket">
+              <div id="websocket" className={hover}>
                 <a href='https://www.github.com/Edwin15857/discord-ws' target="blank">
                   <Image src={ws} alt='' className="rounded-xl"></Image>
                 </a>
@@ -210,7 +211,7 @@ export default function Home() {
                 </div>
 
               </div>
-              <div id="discord.js">
+              <div id="discord.js" className={hover}>
                 <a href='https://www.github.com/Edwin15857/autocode-discordjs' target="blank">
                   <Image src={acode_djs} alt='' className="rounded-xl"></Image>
                 </a>
