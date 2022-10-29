@@ -22,6 +22,12 @@ body {
   }
 }
 
+@media (min-width:414px) and (min-height:736px) {
+  footer {
+    height: 15rem;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
