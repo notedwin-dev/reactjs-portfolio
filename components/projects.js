@@ -34,7 +34,7 @@ export default function Projects() {
                     </div>
 
                 </div>
-                <div id="portfolio" className={hover}>Q
+                <div id="portfolio" className={hover}>
                     <Link href="/projects/portfolio" target="blank">
                         <Image src={portfolio} alt='' className="rounded-xl"></Image>
                     </Link>

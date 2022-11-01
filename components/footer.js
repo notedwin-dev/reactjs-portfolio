@@ -14,7 +14,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="flex-col relative m-5">
-                        <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Developers</h4>
+                        <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Development</h4>
                         <ul className="list-none text-sm">
                             <li className="dark:text-white"><a href="https://github.com/Edwin15857" target="blank">GitHub</a></li>
                             <li className="dark:text-white"><a href="https://link.notedwin.co/tutorials-youtube" target="blank">YouTube</a></li>

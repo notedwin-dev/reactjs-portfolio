@@ -9,7 +9,7 @@ export default function Nav(icons) {
     let icon;
     if (icons.icons === "Home") {
         icon = <Link href="/">
-            <AiFillHome className="cursor-pointer text-3xl dark:fill-white mx-5"></AiFillHome>
+            <AiFillHome className="cursor-pointer text-3xl mx-5 dark:fill-white"></AiFillHome>
         </Link>
     } else if (icons.icons === "Project") {
         icon = <Link href="/projects">
