@@ -4,6 +4,7 @@ import Nav from '../../components/nav';
 import portfolio from '../../public/portfolio-website.jpg';
 import Footer from '../../components/footer';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Portfolio() {
     return (
@@ -17,26 +18,23 @@ export default function Portfolio() {
 
             <main className="bg-white dark:bg-slate-800">
                 <section className="px-10">
-                    <Nav>
-                        <li>
-                            <Link className="bg-gradient-to-r from-blue-400 to-cyan-600 text-white px-4 py-2 rounded-md" href="/" >Main Page</Link>
-                        </li>
-                        <li>
-                            <Link className="bg-gradient-to-r from-blue-400 to-cyan-600 text-white px-4 py-2 rounded-md" href="/projects/" >Projects</Link>
-                        </li>
-                    </Nav>
+                    <Nav icons="Project" />
                     <div className="text-center mx-10">
-                        <h1 className="font-bold text-2xl pb-5">
+                        <h1 className="font-bold text-2xl text-slate-500 pb-5">
                             Portfolio Website
                         </h1>
                         <p className="text-md">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            This Portfolio Website was initially built to learn how to make a website using HTML, JavaScript and CSS. As I&apos;m getting better at HTML, I managed to get the website from a plain no CSS webpage to a responsive website with beautiful scroll animations and demonstrate my ability to continue to upskill in Front-end Development. It also have me the opportunity to create an <a href="https://autocode.com/notedwin/apps/portfolio-using-html-in-autocode/"><span className="text-blue-gray-100 dark:text-cyan-500">open source app on Autocode</span></a> to show others how to make a beautiful portfolio website just like mine.
                         </p>
+                    </div>
+
+                    <div className="flex justify-center my-8">
+                        <iframe src='https://notedwin.co' width={1240} height={720} name='HTML Portfolio Website' />
                     </div>
 
                 </section>
                 <Footer />
             </main>
-        </div>
+        </div >
     )
 }

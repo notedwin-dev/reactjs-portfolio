@@ -40,7 +40,7 @@ export default function Home() {
         <section className='h-auto px-10'>
           <div className="text-center">
             <h2 id="skills" className="font-sans font-semibold text-3xl py-2 text-blue-gray-100 dark:text-cyan-500">Skills</h2>
-            <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">Here are some of the <span className="text-blue-gray dark:text-cyan-500">Skills</span>, <span className="text-blue-gray dark:text-cyan-500">Programming Languages</span> and <span className="text-blue-gray dark:text-cyan-500">Tools</span> that I am familiar with.</p>
+            <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">Here are some of the <span className="text-blue-gray-100 dark:text-cyan-500">Skills</span>, <span className="text-blue-gray-100 dark:text-cyan-500">Programming Languages</span> and <span className="text-blue--100 dark:text-cyan-500">Tools</span> that I am familiar with.</p>
           </div>
 
           <div className="lg:flex gap-8">
@@ -115,7 +115,7 @@ export default function Home() {
           <div className="text-center">
             <h2 id="projects" className="font-sans font-semibold text-3xl py-2 text-blue-gray-100 dark:text-cyan-500">Projects</h2>
             <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">This section features some of the amazing projects that I have done in the past!</p>
-            <p>You can view all of my <Link className="text-blue-gray-100 dark:text-cyan-500" href="/projects">projects here</Link> in the projects directory!</p>
+            <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">You can view all of my <Link href="/projects"><span className="text-blue-gray-100 dark:text-cyan-500">projects here</span></Link> in the projects directory!</p>
           </div>
           <Projects />
         </section >
