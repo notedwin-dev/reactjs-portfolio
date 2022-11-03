@@ -1,16 +1,14 @@
 import React from 'react';
 import Head from 'next/head';
-import Nav from '../../components/nav';
-import portfolio from '../../public/portfolio-website.jpg';
-import Footer from '../../components/footer';
+import Nav from '../../components/zh/nav';
+import Footer from '../../components/zh/footer';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Portfolio() {
     return (
         <div>
             <Head>
-                <title>Edwin Ng&apos;s Portfolio</title>
+                <title>Edwin Ng的作品集</title>
                 <meta name="description" content="A Next.js Portfolio built by and built for Edwin Ng, aka NotEdwin." />
                 <meta property="og:image" content="/me.jpg" />
                 <link rel="icon" href="/favicon.ico" />
@@ -21,13 +19,13 @@ export default function Portfolio() {
                     <Nav icons="Project" />
                     <div className="text-center mx-10">
                         <h1 className="font-bold text-2xl text-slate-500 pb-5">
-                            Portfolio Website
+                            HTML作品集网页
                         </h1>
                         <p className="text-md">
-                            This Portfolio Website was initially built to learn how to make a website using HTML, JavaScript and CSS. As I&apos;m getting better at HTML, I managed to get the website from a plain no CSS webpage to a responsive website with beautiful scroll animations and demonstrate my ability to continue to upskill in Front-end Development. It also have me the opportunity to create an <a href="https://autocode.com/notedwin/apps/portfolio-using-html-in-autocode/"><span className="text-blue-gray-100 dark:text-cyan-500">open source app on Autocode</span></a> to show others how to make a beautiful portfolio website just like mine.
+                            这个作品集网页原本是用于学习如何使用HTML、JavaScript 和 CSS 制作网站而构建的. 随着我在 HTML 方面的进步，我设法将网站从一个没有 CSS 的普通网页变成了一个具有漂亮元素显示动画的响应式网站，并展示了我继续提升前端开发技能的能力。 这也变成了<a href="https://autocode.com/notedwin/apps/portfolio-using-html-in-autocode/"><span className="text-blue-gray-100 dark:text-cyan-500">我在Autocode上创建的第一个开源网页模板</span></a> 让大家学习如何在Autocode上利用我的模板并且使用HTML制作属于他们自己的作品集。
                         </p>
                         <p>
-                            Visit the full site <a href="https://notedwin.co"><span className='text-blue-gray-100 dark:text-cyan-500'>here!</span></a>
+                            <a href="https://notedwin.co"><span className='text-blue-gray-100 dark:text-cyan-500'>点击这里</span></a>就可以访问完整的网站啦！
                         </p>
                     </div>
 
