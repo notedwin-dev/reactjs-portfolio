@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Nav from '../../components/nav';
-import portfolio from '../../public/portfolio-website.jpg';
+import Nav from '../../../components/nav';
 import Footer from '../../components/footer';
 
 export default function discordJS() {
