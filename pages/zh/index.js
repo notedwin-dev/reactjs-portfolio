@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Nav from '../components/nav';
-import About from '../components/about';
+import Nav from '../../components/zh/nav';
+import About from '../../components/about';
 import { BsCodeSlash } from 'react-icons/bs';
 import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai';
 import { SiCsharp, SiDiscord, SiGit, SiHeroku, SiIntellijidea, SiJava, SiJavascript, SiNextdotjs, SiPython, SiReact, SiReplit, SiTailwindcss, SiTypescript, SiVisualstudiocode } from 'react-icons/si';
@@ -8,8 +8,8 @@ import { MdOutlineWeb } from 'react-icons/md';
 import { TbApi } from 'react-icons/tb';
 import { BiCodeBlock } from 'react-icons/bi';
 import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
-import Footer from '../components/footer';
-import Projects from '../components/projects';
+import Footer from '../../components/zh/footer';
+import Projects from '../../components/projects';
 import Link from 'next/link';
 
 

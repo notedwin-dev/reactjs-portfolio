@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Nav from '../../../components/zh/nav';
-import Footer from '../../components/zh/footer';
+import Footer from '../../../components/zh/footer';
 
 export default function discordJS() {
     return (
