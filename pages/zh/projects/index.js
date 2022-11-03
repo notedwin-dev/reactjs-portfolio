@@ -5,9 +5,9 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import Nav from '../../components/nav';
 import Nav from '../../../components/zh/nav';
 import Footer from '../../../components/zh/footer';
+import Projects from '../../../components/projects';
 
 export default function Portfolio() {
     return (
