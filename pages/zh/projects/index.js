@@ -6,7 +6,6 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Nav from '../../components/nav';
-import Head from 'next/head';
 import Nav from '../../../components/zh/nav';
 import Footer from '../../../components/zh/footer';
 
