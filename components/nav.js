@@ -1,20 +1,27 @@
-import React, { Component, useState, useEffect } from 'react'
-import { BsFillMoonStarsFill } from 'react-icons/bs';
+import React, { useState, useEffect } from 'react'
+import { BsFillMoonStarsFill, BsFillFolderFill } from 'react-icons/bs';
 import { AiFillHome } from 'react-icons/ai';
-import { HiCodeBracketSquare } from 'react-icons/hi2';
+//import { HiCodeBracketSquare } from 'react-icons/hi2';
 import Link from 'next/link';
+import ToolTip from './Tooltip';
 
 export default function Nav(icons) {
     const [darkMode, setDarkMode] = useState(null);
+
     let icon;
     if (icons.icons === "Home") {
-        icon = <Link href="/">
-            <AiFillHome className="cursor-pointer text-3xl mx-5 dark:fill-white"></AiFillHome>
-        </Link>
+        icon = <ToolTip tooltip='Back to Home'>
+            <Link href="/">
+                <AiFillHome className="cursor-pointer text-3xl mx-5 dark:fill-white" > </AiFillHome>
+            </Link>
+        </ToolTip>
     } else if (icons.icons === "Project") {
-        icon = <Link href="/projects">
-            <HiCodeBracketSquare className="cursor-pointer text-3xl dark:fill-white mx-5"></HiCodeBracketSquare>
-        </Link>
+        icon =
+            <ToolTip tooltip="Project Directory">
+                <Link href="/projects">
+                    <BsFillFolderFill className="cursor-pointer text-3xl dark:fill-white mx-5" ></BsFillFolderFill>
+                </Link>
+            </ToolTip>
     }
 
     useEffect(() => {
@@ -35,9 +42,9 @@ export default function Nav(icons) {
     }, [darkMode])
 
     return (
-        <nav className="pt-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-white mr-5">Edwin Ng</h1>
-            <ul className="flex items-center">
+        <nav className="pt-10 mb-12 flex justify-between" >
+            <h1 className="text-xl font-burtons dark:text-white mr-5" > Edwin Ng </h1>
+            <ul className="flex items-center" >
                 <li>
                     <BsFillMoonStarsFill onClick={() => setDarkMode(darkMode === "dark" ? "light" : "dark")} className="cursor-pointer text-2xl dark:fill-yellow-300" />
                 </li>
@@ -45,10 +52,15 @@ export default function Nav(icons) {
                     {icon}
                 </li>
                 <li>
-                    <a className="bg-gradient-to-r from-blue-400 to-cyan-600 text-white px-4 py-2 rounded-md" href="https://github.com/Edwin15857/reactjs-portfolio/raw/main/pages/Edwin-Ng-Resume.pdf" >Resume</a>
+                    <a className="bg-gradient-to-r from-blue-400 to-cyan-600 text-white px-4 py-2 rounded-md" href="https://github.com/Edwin15857/reactjs-portfolio/raw/main/pages/Edwin-Ng-Resume.pdf" > Resume </a>
                 </li>
             </ul>
         </nav>
     )
 
+}
+function Function() {
+    if (typeof window === 'object') {
+        window.location.href = '/projects'
+    }
 }

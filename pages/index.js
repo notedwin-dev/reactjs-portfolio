@@ -1,8 +1,3 @@
-/**
- * It renders the page with the head, nav, about, skills, projects, and footer components
- * @returns A div with a main tag with a section tag with a nav tag with a li tag with an a tag with a
- * href attribute.
- */
 import Head from 'next/head';
 import Nav from '../components/nav';
 import About from '../components/about';
