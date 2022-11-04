@@ -27,93 +27,31 @@ export default function Home() {
       </Head>
 
       <main className="bg-white dark:bg-slate-800">
-        <section className="min-h-screen px-10">
+        <section className="px-10">
           <Nav icons="Project" />
-          <About />
         </section>
-
-        <section className='h-auto px-10'>
-          <div className="text-center">
-            <h2 id="skills" className="font-sans font-semibold text-3xl py-2 text-blue-gray-100 dark:text-cyan-500">Skills</h2>
-            <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">Here are some of the <span className="text-blue-gray-100 dark:text-cyan-500">Skills</span>, <span className="text-blue-gray-100 dark:text-cyan-500">Programming Languages</span> and <span className="text-blue--100 dark:text-cyan-500">Tools</span> that I am familiar with.</p>
+        <section className='min-h-screen text-center mx-auto mt-80'>
+          <div>
+            <h1 className='font-bold text-2xl mb-5'>Please select your preferred language.</h1>
+            <h1 className='font-extrabold text-2xl mb-10'>请选择您的首选语言</h1>
           </div>
-
-          <div className="lg:flex gap-8">
-
-            <div className={cards}>
-              <IoLogoNodejs className="mx-auto text-5xl text-green-500" />
-              <h2 className="font-bold text-blue-400 dark:text-green-600">Node.js</h2>
-              <p>Node.js is an open-source, cross-platform, back-end JavaScript runtime environment.</p>
-              <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Tools</h2>
-              <div className={tag}><BiCodeBlock className='mr-1' /> Autocode</div>
-              <div className={tag}><AiFillGithub className="mr-1" /> Github</div>
-              <div className={tag}><SiGit className="mr-1" /> Git</div>
-              <div className={tag}><SiReplit className='mr-1' /> Replit</div>
-              <div className={tag}><SiHeroku className='mr-1' /> Heroku</div>
-              <div className={tag}><SiVisualstudiocode className="mr-1" /> Visual Studio Code</div>
-              <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Libraries</h2>
-              <div className={tag}><SiReact className="mr-1" /> React.js</div>
-              <div className={tag}><SiNextdotjs className="mr-1" /> Next.js</div>
-              <div className={tag}><SiDiscord className='mr-1' /> Discord.js</div>
-              <div className={tag}><SiJavascript className='mr-1' /> jimp</div>
-              <div className={tag}><SiJavascript className='mr-1' /> lib</div>
-              <div className={tag}><SiJavascript className='mr-1' /> node-fetch</div>
-              <div className={tag}><SiJavascript className='mr-1' /> canvas</div>
-              <div className={tag}><SiJavascript className='mr-1' /> ws</div>
-              <div className={tag}><SiJavascript className='mr-1' /> axios</div>
-            </div>
-
-            <div className={cards}>
-              <BsCodeSlash className="mx-auto text-5xl text-blue-600" />
-              <h2 className="font-bold text-blue-400 dark:text-blue-700">Progamming Languages</h2>
-              <p>A programming language is a system of notation for writing computer programs.</p>
-              <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Tools</h2>
-              <div className={tag}><BiCodeBlock className='mr-1' /> Autocode</div>
-              <div className={tag}><AiFillGithub className="mr-1" /> Github</div>
-              <div className={tag}><SiGit className='mr-1' /> Git</div>
-              <div className={tag}><SiReplit className='mr-1' /> Replit</div>
-              <div className={tag}><SiHeroku className='mr-1' /> Heroku</div>
-              <div className={tag}><SiIntellijidea className='mr-1' /> IntelliJ</div>
-              <div className={tag}><SiVisualstudiocode className='mr-0.5' /> Visual Studio Code</div>
-              <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Languages</h2>
-              <div className={tag}><SiJavascript className='mr-1' /> JavaScript</div>
-              <div className={tag}><SiJava className='mr-1' /> Java</div>
-              <div className={tag}><SiPython className='mr-1' /> Python</div>
-              <div className={tag}><SiCsharp className='mr-1' /> C#</div>
-              <div className={tag}><SiTypescript className='mr-1' /> TypeScript</div>
-            </div>
-
-            <div className={cards}>
-              <MdOutlineWeb className="mx-auto text-5xl text-yellow-500" />
-              <h2 className="font-bold text-blue-400 dark:text-yellow-600">Web Development</h2>
-              <p>Web development is the work involved in developing a website for the Internet</p>
-              <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Tools</h2>
-              <div className={tag}><BiCodeBlock className='mr-1' /> Autocode</div>
-              <div className={tag}><AiFillGithub className="mr-1" /> Github</div>
-              <div className={tag}><SiGit className="mr-1" /> Git</div>
-              <div className={tag}><SiReplit className='mr-1' /> Replit</div>
-              <div className={tag}><SiHeroku className='mr-1' /> Heroku</div>
-              <div className={tag}><SiVisualstudiocode className="mr-1" /> Visual Studio Code</div>
-              <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Skills</h2>
-              <div className={tag}><SiReact className="mr-1" /> React.js</div>
-              <div className={tag}><SiNextdotjs className="mr-1" /> Next.js</div>
-              <div className={tag}><SiTailwindcss className="mr-1" /> Tailwind CSS</div>
-              <div className={tag}><AiFillHtml5 className='mr-1' /> HTML</div>
-              <div className={tag}><IoLogoCss3 className='mr-1' /> CSS</div>
-              <div className={tag}><IoLogoJavascript className="mr-1" /> JavaScript</div>
-              <div className={tag}><TbApi className="mr-1" /> REST API</div>
-            </div>
+          <div>
+            <button className="p-2 text-white bg-blue-400 shadow-2xl rounded-md mx-5" onClick={() => {
+              window.location.href = "/en/"
+            }}>English (EN)</button>
+            <button className="p-2 text-white bg-blue-400 shadow-2xl rounded-md mx-5" onClick={() => {
+              window.location.href = "/zh/"
+            }}>中文简体 (ZH)</button>
+            <button className="p-2 text-white bg-blue-400 shadow-2xl rounded-md mx-5" onClick={() => {
+              window.location.href = "/"
+            }}>[制作中] 中文繁体 (ZH)</button>
+          </div>
+          <div className="my-10">
+            <h2 className="text-2xl">After you have selected your preferred language, this website will automatically be displayed in the language of your choice for easier reading.</h2>
+            <h2 className="text-2xl">当你选择了您的首选语言后，本网站将会自动以您选择的语言展示出来，以便阅读。</h2>
           </div>
         </section>
 
-        <section className='mx-20 project-grid'>
-          <div className="text-center">
-            <h2 id="projects" className="font-sans font-semibold text-3xl py-2 text-blue-gray-100 dark:text-cyan-500">Projects</h2>
-            <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">This section features some of the amazing projects that I have done in the past!</p>
-            <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">You can view all of my <Link href="/projects"><span className="text-blue-gray-100 dark:text-cyan-500">projects here</span></Link> in the projects directory!</p>
-          </div>
-          <Projects />
-        </section >
         <Footer />
       </main >
     </div >

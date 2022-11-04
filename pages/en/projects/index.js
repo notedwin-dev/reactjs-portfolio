@@ -1,13 +1,10 @@
-/**
- * It renders the Nav, a header, a paragraph, and the Projects component
- * @returns A React component.
- */
+//Main File located at http://localhost:3000/en/projects
+
 import React from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
-import Nav from '../../components/nav';
-import Footer from '../../components/footer';
-import Projects from '../../components/projects';
+import Nav from '../../../components/nav';
+import Footer from '../../../components/footer';
+import Projects from '../../../components/projects';
 
 export default function Portfolio() {
     return (

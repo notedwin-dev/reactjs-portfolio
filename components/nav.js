@@ -11,14 +11,14 @@ export default function Nav(icons) {
     let icon;
     if (icons.icons === "Home") {
         icon = <ToolTip tooltip='Back to Home'>
-            <Link href="/">
+            <Link href="/en/">
                 <AiFillHome className="cursor-pointer text-3xl mx-5 dark:fill-white" > </AiFillHome>
             </Link>
         </ToolTip>
     } else if (icons.icons === "Project") {
         icon =
             <ToolTip tooltip="Project Directory">
-                <Link href="/projects">
+                <Link href="/en/projects">
                     <BsFillFolderFill className="cursor-pointer text-3xl dark:fill-white mx-5" ></BsFillFolderFill>
                 </Link>
             </ToolTip>

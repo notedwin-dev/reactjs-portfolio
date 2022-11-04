@@ -1,7 +1,5 @@
-/**
- * It renders the Nav, a header, a paragraph, and the Projects component
- * @returns A React component.
- */
+//Main File located at http://localhost:3000/zh/projects/
+
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';

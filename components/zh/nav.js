@@ -11,14 +11,14 @@ export default function Nav(icons) {
     let icon;
     if (icons.icons === "Home") {
         icon = <ToolTip tooltip='回到主页'>
-            <Link href="/">
+            <Link href="/zh/">
                 <AiFillHome className="cursor-pointer text-3xl mx-5 dark:fill-white" > </AiFillHome>
             </Link>
         </ToolTip>
     } else if (icons.icons === "Project") {
         icon =
             <ToolTip tooltip="作品集">
-                <Link href="/projects">
+                <Link href="/zh/projects">
                     <BsFillFolderFill className="cursor-pointer text-3xl dark:fill-white mx-5" ></BsFillFolderFill>
                 </Link>
             </ToolTip>
