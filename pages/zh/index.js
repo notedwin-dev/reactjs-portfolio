@@ -2,7 +2,7 @@
 
 import Head from 'next/head';
 import Nav from '../../components/zh/nav';
-import About from '../../components/about';
+import About from '../../components/zh/about';
 import { BsCodeSlash } from 'react-icons/bs';
 import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai';
 import { SiCsharp, SiDiscord, SiExpress, SiGit, SiHeroku, SiIntellijidea, SiJava, SiJavascript, SiMongodb, SiNextdotjs, SiPython, SiReact, SiReplit, SiTailwindcss, SiTypescript, SiVisualstudiocode } from 'react-icons/si';
@@ -11,8 +11,7 @@ import { TbApi } from 'react-icons/tb';
 import { BiCodeBlock } from 'react-icons/bi';
 import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
 import Footer from '../../components/zh/footer';
-import Projects from '../../components/projects';
-import Link from 'next/link';
+import Projects from '../../components/zh/projects';
 
 
 export default function Home() {
@@ -53,7 +52,7 @@ export default function Home() {
                             <div className={tag}><SiReplit className='mr-1' /> Replit</div>
                             <div className={tag}><SiHeroku className='mr-1' /> Heroku</div>
                             <div className={tag}><SiVisualstudiocode className="mr-1" /> Visual Studio Code</div>
-                            <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">JavaScript模板库</h2>
+                            <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">擅长的JavaScript模块</h2>
                             <div className={tag}><SiReact className="mr-1" /> React.js</div>
                             <div className={tag}><SiNextdotjs className="mr-1" /> Next.js</div>
                             <div className={tag}><SiDiscord className='mr-1' /> Discord.js</div>
@@ -79,7 +78,7 @@ export default function Home() {
                             <div className={tag}><SiHeroku className='mr-1' /> Heroku</div>
                             <div className={tag}><SiIntellijidea className='mr-1' /> IntelliJ</div>
                             <div className={tag}><SiVisualstudiocode className='mr-0.5' /> Visual Studio Code</div>
-                            <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">语言</h2>
+                            <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">我熟悉的编程语言</h2>
                             <div className={tag}><SiJavascript className='mr-1' /> JavaScript</div>
                             <div className={tag}><SiJava className='mr-1' /> Java</div>
                             <div className={tag}><SiTypescript className='mr-1' /> TypeScript</div>
@@ -114,9 +113,9 @@ export default function Home() {
 
                 <section className='mx-20 project-grid'>
                     <div className="text-center">
-                        <h2 id="projects" className="font-sans font-semibold text-3xl py-2 text-blue-gray-100 dark:text-cyan-500">Projects</h2>
-                        <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">This section features some of the amazing projects that I have done in the past!</p>
-                        <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">You can view all of my <Link href="/projects"><span className="text-blue-gray-100 dark:text-cyan-500">projects here</span></Link> in the projects directory!</p>
+                        <h2 id="projects" className="font-sans font-semibold text-3xl py-2 text-blue-gray-100 dark:text-cyan-500">作品</h2>
+                        <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">本节介绍了一些我过去所完成的一些优秀的作品！</p>
+                        <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">你可以点击<a href="/zh/projects"><span className="text-blue-gray-100 dark:text-cyan-500">这里</span></a>进入到作品集里参考或访问我所有的作品！</p>
                     </div>
                     <Projects />
                 </section >

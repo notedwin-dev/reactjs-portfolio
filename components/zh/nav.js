@@ -17,7 +17,7 @@ export default function Nav(icons) {
         </ToolTip>
     } else if (icons.icons === "Project") {
         icon =
-            <ToolTip tooltip="作品集">
+            <ToolTip tooltip="作品集目录">
                 <Link href="/zh/projects">
                     <BsFillFolderFill className="cursor-pointer text-3xl dark:fill-white mx-5" ></BsFillFolderFill>
                 </Link>

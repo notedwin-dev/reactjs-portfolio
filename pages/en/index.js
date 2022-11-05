@@ -5,7 +5,7 @@ import Nav from '../../components/nav';
 import About from '../../components/about';
 import { BsCodeSlash } from 'react-icons/bs';
 import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai';
-import { SiCsharp, SiDiscord, SiGit, SiHeroku, SiIntellijidea, SiJava, SiJavascript, SiNextdotjs, SiPython, SiReact, SiReplit, SiTailwindcss, SiTypescript, SiVisualstudiocode } from 'react-icons/si';
+import { SiCsharp, SiDiscord, SiGit, SiHeroku, SiIntellijidea, SiJava, SiJavascript, SiNextdotjs, SiPython, SiReact, SiReplit, SiTailwindcss, SiTypescript, SiVisualstudiocode, SiMongodb, SiExpress } from 'react-icons/si';
 import { MdOutlineWeb } from 'react-icons/md';
 import { TbApi } from 'react-icons/tb';
 import { BiCodeBlock } from 'react-icons/bi';
@@ -53,10 +53,12 @@ export default function Home() {
               <div className={tag}><SiReplit className='mr-1' /> Replit</div>
               <div className={tag}><SiHeroku className='mr-1' /> Heroku</div>
               <div className={tag}><SiVisualstudiocode className="mr-1" /> Visual Studio Code</div>
-              <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Libraries</h2>
+              <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">JavaScript Modules I&apos;m good at</h2>
               <div className={tag}><SiReact className="mr-1" /> React.js</div>
               <div className={tag}><SiNextdotjs className="mr-1" /> Next.js</div>
               <div className={tag}><SiDiscord className='mr-1' /> Discord.js</div>
+              <div className={tag}><SiMongodb className="mr-1" /> MongoDB</div>
+              <div className={tag}><SiExpress className="mr-1" /> Express.js</div>
               <div className={tag}><SiJavascript className='mr-1' /> jimp</div>
               <div className={tag}><SiJavascript className='mr-1' /> lib</div>
               <div className={tag}><SiJavascript className='mr-1' /> node-fetch</div>
@@ -77,29 +79,31 @@ export default function Home() {
               <div className={tag}><SiHeroku className='mr-1' /> Heroku</div>
               <div className={tag}><SiIntellijidea className='mr-1' /> IntelliJ</div>
               <div className={tag}><SiVisualstudiocode className='mr-0.5' /> Visual Studio Code</div>
-              <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Languages</h2>
+              <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Programming Languages that I&apos;m familiar with</h2>
               <div className={tag}><SiJavascript className='mr-1' /> JavaScript</div>
               <div className={tag}><SiJava className='mr-1' /> Java</div>
-              <div className={tag}><SiPython className='mr-1' /> Python</div>
-              <div className={tag}><SiCsharp className='mr-1' /> C#</div>
               <div className={tag}><SiTypescript className='mr-1' /> TypeScript</div>
+              <div className={tag}><SiCsharp className='mr-1' /> C#</div>
+              <div className={tag}><SiPython className='mr-1' /> Python</div>
             </div>
 
             <div className={cards}>
               <MdOutlineWeb className="mx-auto text-5xl text-yellow-500" />
-              <h2 className="font-bold text-blue-400 dark:text-yellow-600">Web Development</h2>
-              <p>Web development is the work involved in developing a website for the Internet</p>
-              <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Tools</h2>
+              <h2 className="font-bold text-blue-400 dark:text-yellow-600">Web Development (Front-End Development)</h2>
+              <p>Web development is the work involved in designing, developing and deploying a website for hosting on the Internet.</p>
+              <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Front-End Development Tools</h2>
               <div className={tag}><BiCodeBlock className='mr-1' /> Autocode</div>
               <div className={tag}><AiFillGithub className="mr-1" /> Github</div>
               <div className={tag}><SiGit className="mr-1" /> Git</div>
               <div className={tag}><SiReplit className='mr-1' /> Replit</div>
               <div className={tag}><SiHeroku className='mr-1' /> Heroku</div>
               <div className={tag}><SiVisualstudiocode className="mr-1" /> Visual Studio Code</div>
-              <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Skills</h2>
+              <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Front-End Development Skills</h2>
               <div className={tag}><SiReact className="mr-1" /> React.js</div>
               <div className={tag}><SiNextdotjs className="mr-1" /> Next.js</div>
               <div className={tag}><SiTailwindcss className="mr-1" /> Tailwind CSS</div>
+              <div className={tag}><SiMongodb className="mr-1" /> MongoDB</div>
+              <div className={tag}><SiExpress className="mr-1" /> Express.js</div>
               <div className={tag}><AiFillHtml5 className='mr-1' /> HTML</div>
               <div className={tag}><IoLogoCss3 className='mr-1' /> CSS</div>
               <div className={tag}><IoLogoJavascript className="mr-1" /> JavaScript</div>
