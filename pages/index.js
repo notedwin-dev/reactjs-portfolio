@@ -1,16 +1,8 @@
 import Head from 'next/head';
 import Nav from '../components/nav';
-import About from '../components/about';
-import { BsCodeSlash } from 'react-icons/bs';
-import { AiFillGithub, AiFillHtml5 } from 'react-icons/ai';
-import { SiCsharp, SiDiscord, SiGit, SiHeroku, SiIntellijidea, SiJava, SiJavascript, SiNextdotjs, SiPython, SiReact, SiReplit, SiTailwindcss, SiTypescript, SiVisualstudiocode } from 'react-icons/si';
-import { MdOutlineWeb } from 'react-icons/md';
-import { TbApi } from 'react-icons/tb';
-import { BiCodeBlock } from 'react-icons/bi';
-import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
+import robot from '../public/robot.png';
 import Footer from '../components/footer';
-import Projects from '../components/projects';
-import Link from 'next/link';
+import Image from 'next/image';
 
 
 export default function Home() {
@@ -30,10 +22,11 @@ export default function Home() {
         <section className="px-10">
           <Nav icons="Project" />
         </section>
-        <section className='min-h-screen text-center mx-auto mt-80'>
+        <section className='min-h-screen text-center mx-auto mt-40'>
           <div>
-            <h1 className='font-bold text-2xl mb-5'>Please select your preferred language.</h1>
-            <h1 className='font-extrabold text-2xl mb-10'>请选择您的首选语言</h1>
+            <Image src={robot} width={250} height={250} alt=""></Image>
+            <h1 className='font-bold text-2xl mb-5 dark:text-sky-300'>Please select your preferred language.</h1>
+            <h1 className='font-extrabold text-2xl mb-10 dark:text-sky-300'>请选择您的首选语言</h1>
           </div>
           <div>
             <button className="p-2 text-white bg-blue-400 shadow-2xl rounded-md mx-5" onClick={() => {
@@ -47,8 +40,8 @@ export default function Home() {
             }}>[制作中] 中文繁体 (ZH)</button>
           </div>
           <div className="my-10">
-            <h2 className="text-2xl">After you have selected your preferred language, this website will automatically be displayed in the language of your choice for easier reading.</h2>
-            <h2 className="text-2xl">当你选择了您的首选语言后，本网站将会自动以您选择的语言展示出来，以便阅读。</h2>
+            <h2 className="text-2xl dark:text-white">After you have selected your preferred language, this website will automatically be displayed in the language of your choice for easier reading.</h2>
+            <h2 className="text-2xl dark:text-white">当你选择了您的首选语言后，本网站将会自动以您选择的语言展示出来，以便阅读。</h2>
           </div>
         </section>
 
