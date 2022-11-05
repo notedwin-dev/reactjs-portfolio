@@ -116,7 +116,7 @@ export default function Home() {
           <div className="text-center">
             <h2 id="projects" className="font-sans font-semibold text-3xl py-2 text-blue-gray-100 dark:text-cyan-500">Projects</h2>
             <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">This section features some of the amazing projects that I have done in the past!</p>
-            <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">You can view all of my <Link href="/projects"><a><span className="text-blue-gray-100 dark:text-cyan-500">projects here</span></a></Link> in the projects directory!</p>
+            <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">You can view all of my <Link href="/en/projects"><a><span className="text-blue-gray-100 dark:text-cyan-500">projects here</span></a></Link> in the projects directory!</p>
           </div>
           <Projects />
         </section >
