@@ -1,6 +1,7 @@
 //Main File located at http://localhost:3000/zh/
 
 import Head from 'next/head';
+import Link from 'next/link';
 import Nav from '../../components/zh/nav';
 import About from '../../components/zh/about';
 import { BsCodeSlash } from 'react-icons/bs';
@@ -115,7 +116,7 @@ export default function Home() {
                     <div className="text-center">
                         <h2 id="projects" className="font-sans font-semibold text-3xl py-2 text-blue-gray-100 dark:text-cyan-500">作品</h2>
                         <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">本节介绍了一些我过去所完成的一些优秀的作品！</p>
-                        <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">你可以点击<a href="/zh/projects"><span className="text-blue-gray-100 dark:text-cyan-500">这里</span></a>进入到作品集里参考或访问我所有的作品！</p>
+                        <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">你可以点击<Link href="/zh/projects"><a><span className="text-blue-gray-100 dark:text-cyan-500">这里</span></a></Link>进入到作品集里参考或访问我所有的作品！</p>
                     </div>
                     <Projects />
                 </section >

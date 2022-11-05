@@ -17,8 +17,10 @@ export default function Projects() {
         <div>
             <div className="grid gap-10 mb-10 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 ">
                 <div id="dashboard" className={hover}>
-                    <Link href="projects/discord-bot-dashboard/" target="blank">
-                        <Image src={dashboard1} alt='' className="rounded-xl" />
+                    <Link href="/zh/projects/discord-bot-dashboard/" target="blank">
+                        <a>
+                            <Image src={dashboard1} alt='' className="rounded-xl" />
+                        </a>
                     </Link>
                     <h3 className="font-bold text-center text-blue-gray-100 dark:text-cyan-500"> Discord 机器人管理仪表盘网站 </h3>
                     <p className="text-center dark:text-white">一个使用Autocode建造的Discord机器人管理仪表盘Web应用程序。</p>
@@ -35,8 +37,10 @@ export default function Projects() {
 
                 </div>
                 <div id="portfolio" className={hover}>
-                    <Link href="/projects/portfolio" target="blank">
-                        <Image src={portfolio} alt='' className="rounded-xl"></Image>
+                    <Link href="/zh/projects/portfolio" target="blank">
+                        <a>
+                            <Image src={portfolio} alt='' className="rounded-xl"></Image>
+                        </a>
                     </Link>
                     <h3 className="font-bold text-center text-blue-gray-100 dark:text-cyan-500"> HTML作品集网站 </h3>
                     <p className="text-center dark:text-white">让初学者学习如何在Autocode中使用HTML和CSS而创建的教程+模板。</p>
@@ -50,8 +54,10 @@ export default function Projects() {
 
                 </div>
                 <div id="websocket" className={hover}>
-                    <Link href='/projects/discord-ws' target="blank">
-                        <Image src={ws} alt='' className="rounded-xl"></Image>
+                    <Link href='/zh/projects/discord-ws' target="blank">
+                        <a>
+                            <Image src={ws} alt='' className="rounded-xl"></Image>
+                        </a>
                     </Link>
                     <h3 className="font-bold text-center text-blue-gray-100 dark:text-cyan-500"> Discord WebSocket </h3>
                     <p className="text-center dark:text-white">让有兴趣的开发者轻松实施 Discord 网关，且无需担心后端工作。</p>
@@ -65,8 +71,10 @@ export default function Projects() {
 
                 </div>
                 <div id="discord.js" className={hover}>
-                    <Link href='/projects/autocode-djs' target="blank">
-                        <Image src={acode_djs} alt='' className="rounded-xl"></Image>
+                    <Link href='/zh/projects/autocode-djs' target="blank">
+                        <a>
+                            <Image src={acode_djs} alt='' className="rounded-xl"></Image>
+                        </a>
                     </Link>
                     <h3 className="font-bold text-center text-blue-gray-100 dark:text-cyan-500"> Autocode Discord.js </h3>
                     <p className="text-center dark:text-white">目的是在 Autocode 的“无服务器” (serverless) 的环境中支持 discord.js。</p>

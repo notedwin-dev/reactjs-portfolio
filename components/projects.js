@@ -17,8 +17,10 @@ export default function Projects() {
         <div>
             <div className="grid gap-10 mb-10 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 ">
                 <div id="dashboard" className={hover}>
-                    <Link href="projects/discord-bot-dashboard/" target="blank">
-                        <Image src={dashboard1} alt='' className="rounded-xl" />
+                    <Link href="/en/projects/discord-bot-dashboard/" target="blank">
+                        <a>
+                            <Image src={dashboard1} alt='' className="rounded-xl" />
+                        </a>
                     </Link>
                     <h3 className="font-bold text-center text-blue-gray-100 dark:text-cyan-500"> Discord Bot Dashboard </h3>
                     <p className="text-center dark:text-white">A Discord Bot Dashboard Web Application created using Autocode.</p>
@@ -35,8 +37,10 @@ export default function Projects() {
 
                 </div>
                 <div id="portfolio" className={hover}>
-                    <Link href="/projects/portfolio" target="blank">
-                        <Image src={portfolio} alt='' className="rounded-xl"></Image>
+                    <Link href="/en/projects/portfolio" target="blank">
+                        <a>
+                            <Image src={portfolio} alt='' className="rounded-xl"></Image>
+                        </a>
                     </Link>
                     <h3 className="font-bold text-center text-blue-gray-100 dark:text-cyan-500"> Portfolio Website </h3>
                     <p className="text-center dark:text-white">A Portfolio Website Template created as beginners tutorial on Autocode.</p>
@@ -50,8 +54,10 @@ export default function Projects() {
 
                 </div>
                 <div id="websocket" className={hover}>
-                    <Link href='/projects/discord-ws' target="blank">
-                        <Image src={ws} alt='' className="rounded-xl"></Image>
+                    <Link href='/en/projects/discord-ws' target="blank">
+                        <a>
+                            <Image src={ws} alt='' className="rounded-xl"></Image>
+                        </a>
                     </Link>
                     <h3 className="font-bold text-center text-blue-gray-100 dark:text-cyan-500"> Discord WebSocket </h3>
                     <p className="text-center dark:text-white">Allows developers to easily implement Discord Gateway without worrying about the backend.</p>
@@ -65,8 +71,10 @@ export default function Projects() {
 
                 </div>
                 <div id="discord.js" className={hover}>
-                    <Link href='/projects/autocode-djs' target="blank">
-                        <Image src={acode_djs} alt='' className="rounded-xl"></Image>
+                    <Link href='/en/projects/autocode-djs' target="blank">
+                        <a>
+                            <Image src={acode_djs} alt='' className="rounded-xl"></Image>
+                        </a>
                     </Link>
                     <h3 className="font-bold text-center text-blue-gray-100 dark:text-cyan-500"> Autocode Discord.js </h3>
                     <p className="text-center dark:text-white">Created to make support for discord.js possible on Autocode&apos;s serverless environment.</p>
