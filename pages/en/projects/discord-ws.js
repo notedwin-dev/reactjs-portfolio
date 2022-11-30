@@ -1,9 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import Nav from '../../../components/nav';
 import Footer from '../../../components/footer';
 
 export default function DiscordWS() {
+    const textBox = "font-bold p-1 border-2 rounded-md fill-white"
     return (
         <div>
             <Head>
@@ -21,8 +23,9 @@ export default function DiscordWS() {
                             Discord WebSocket
                         </h1>
                         <p className="text-md mb-16 dark:text-white">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            In this project, I managed to implement a Discord WebSocket Gateway that are used for receiving Discord events such as <code className={textBox}>MESSAGE_CREATE</code>, <code className={textBox}>VOICE_STATE_UPDATE</code>, <code className={textBox}>GUILD_MEMBER_ADD</code>, and more.
                         </p>
+                        <Link href="https://github.com/Edwin15857/discord-ws"><a><h1 className="font-bold text-2xl text-slate-500 pb-5">Discord WebSocket Github Repository</h1></a></Link>
                     </div>
 
                 </section>

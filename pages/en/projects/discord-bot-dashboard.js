@@ -2,6 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import Nav from '../../../components/nav';
 import Footer from '../../../components/footer';
+import dbd1 from '../../../public/discord-bot-dashboard-1.jpg';
+import dbd2 from '../../../public/discord-bot-dashboard-2.jpg';
+import Image from 'next/image';
 
 export default function DBDashboard() {
     return (
@@ -23,6 +26,9 @@ export default function DBDashboard() {
                         <p className="text-md mb-16 dark:text-white">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
+                        <Image src={dbd1} width={1240} height={720} alt=""></Image>
+                        <Image src={dbd2} width={1240} height={720} alt=""></Image>
+                        <h1 className="font-bold text-2xl text-slate-500 pb-5">Not Open Source Yet</h1>
                     </div>
 
                 </section>
