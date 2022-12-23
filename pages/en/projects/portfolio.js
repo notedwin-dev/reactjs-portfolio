@@ -18,10 +18,10 @@ export default function Portfolio() {
                     <Nav icons="Project" />
                     <div className="text-center mx-10">
                         <h1 className="font-bold text-2xl text-slate-500 pb-5">
-                            Portfolio Website
+                            HTML Portfolio / Personal Website
                         </h1>
                         <p className="text-md dark:text-white">
-                            This Portfolio Website was initially built to learn how to make a website using HTML, JavaScript and CSS. As I&apos;m getting better at HTML, I managed to get the website from a plain no CSS webpage to a responsive website with beautiful element reveal animations and demonstrate my ability to continue to upskill in Front-end Development. It also have me the opportunity to create an <a href="https://autocode.com/notedwin/apps/portfolio-using-html-in-autocode/"><span className="text-blue-gray-100 dark:text-cyan-500">open source app on Autocode</span></a> to show others how to make a beautiful portfolio website just like mine.
+                            This Portfolio / Personal Website was initially built to learn how to make a website using HTML, JavaScript and CSS. As I&apos;m getting better at HTML, I managed to get the website from a plain no CSS webpage to a responsive website with beautiful element reveal animations and demonstrate my ability to continue to upskill in Front-end Development. It also have me the opportunity to create an <a href="https://autocode.com/notedwin/apps/portfolio-using-html-in-autocode/"><span className="text-blue-gray-100 dark:text-cyan-500">open source app on Autocode</span></a> to show others how to make a beautiful portfolio website just like mine.
                         </p>
                         <p className="dark:text-white">
                             Visit the full site <a href="https://notedwin.co"><span className='text-blue-gray-100 dark:text-cyan-500'>here!</span></a>
