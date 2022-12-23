@@ -6,7 +6,13 @@ import Link from 'next/link';
 import ToolTip from '../Tooltip';
 
 export default function Nav(icons) {
-    const [darkMode, setDarkMode] = useState(null);
+    const getStorage = () => {
+        if (typeof window !== 'undefined') {
+            return localStorage.getItem("theme") || null
+        }
+    }
+
+    const [darkMode, setDarkMode] = useState(getStorage);
 
     let icon;
     if (icons.icons === "Home") {
@@ -26,7 +32,7 @@ export default function Nav(icons) {
 
     useEffect(() => {
         // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             setDarkMode('dark')
         } else {
             setDarkMode('light')
@@ -35,8 +41,10 @@ export default function Nav(icons) {
 
     useEffect(() => {
         if (darkMode === "dark") {
+            localStorage.theme = 'dark'
             document.documentElement.classList.add("dark");
         } else {
+            localStorage.theme = 'light'
             document.documentElement.classList.remove("dark");
         }
     }, [darkMode])

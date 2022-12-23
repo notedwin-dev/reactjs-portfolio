@@ -60,7 +60,7 @@ export default function Nav(icons) {
                     {icon}
                 </li>
                 <li>
-                    <a className="bg-gradient-to-r from-blue-400 to-cyan-600 text-white px-4 py-2 rounded-md" href="https://github.com/Edwin15857/reactjs-portfolio/raw/main/pages/Edwin-Ng-Resume.pdf" > Resume </a>
+                    <a className="bg-gradient-to-r from-blue-400 to-cyan-600 text-white px-4 py-2 rounded-md" href="https://github.com/Edwin15857/reactjs-portfolio/raw/main/pages/Edwin-Ng-Resume.pdf"> Resume </a>
                 </li>
             </ul>
         </nav>
