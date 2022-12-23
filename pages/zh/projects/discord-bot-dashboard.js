@@ -1,7 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
-import Nav from '../../../components/zh/nav';
-import Footer from '../../../components/zh/footer';
+import Nav from '../../../components/nav';
+import Footer from '../../../components/footer';
+import dbd1 from '../../../public/discord-bot-dashboard-1.jpg';
+import dbd2 from '../../../public/discord-bot-dashboard-2.jpg';
+import Image from 'next/image';
 
 export default function DBDashboard() {
     return (
@@ -17,12 +20,15 @@ export default function DBDashboard() {
                 <section className="px-10">
                     <Nav icons="Project" />
                     <div className="text-center mx-10">
-                        <h1 className="font-bold text-slate-500 text-2xl pb-5">
+                        <h1 className="font-bold text-slate-500 text-2xl pb-5 dark:text-blue-gray-100">
                             Discord Bot Dashboard
                         </h1>
                         <p className="text-md mb-16 dark:text-white">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            在这个Discord 机器人仪表盘项目里，我设法实现了独特的 MERN 堆栈 —— MongoDB 作为存储服务器信息和配置的数据库； 浏览器 cookie 用于身份验证流程，例如使用 Discord 登录和登出网站； Autocode 的 HTTP(S) 端点 - 让你可以把写好的 HTML 转换成字符串并在 HTML 中使用 JavaScript 的函数 及 编写Node.js的代码，最后再从字符串中缓冲成 HTML （类似于 .ejs 和 Express 组合起来的使用方法） . 该项目也完全用 Node.js 版本 14 编写。
                         </p>
+                        <Image src={dbd1} width={1240} height={720} alt=""></Image>
+                        <Image src={dbd2} width={1240} height={720} alt=""></Image>
+                        <h1 className="font-bold text-2xl text-slate-500 pb-5 dark:text-blue-gray-100">暂未开源</h1>
                     </div>
 
                 </section>

@@ -20,15 +20,15 @@ export default function DBDashboard() {
                 <section className="px-10">
                     <Nav icons="Project" />
                     <div className="text-center mx-10">
-                        <h1 className="font-bold text-slate-500 text-2xl pb-5">
+                        <h1 className="font-bold text-slate-500 text-2xl pb-5 dark:text-blue-gray-100">
                             Discord Bot Dashboard
                         </h1>
                         <p className="text-md mb-16 dark:text-white">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            In this Discord Bot Dashboard, I managed to implement the unique MERN stack - MongoDB as database for storing server informations and configurations; Browser cookies for authentication flow such as logging in with Discord and logging out; Autocode&apos;s HTTP(S) endpoint that allows you to use JavaScript variables in your HTML and write Node.js codes, buffer the HTML from string and return it as an actual webpage (similar to how .ejs and Express works when combined). The project is also completely written in Node.js version 14.
                         </p>
                         <Image src={dbd1} width={1240} height={720} alt=""></Image>
                         <Image src={dbd2} width={1240} height={720} alt=""></Image>
-                        <h1 className="font-bold text-2xl text-slate-500 pb-5">Not Open Source Yet</h1>
+                        <h1 className="font-bold text-2xl text-slate-500 pb-5 dark:text-blue-gray-100">Not Open Source Yet</h1>
                     </div>
 
                 </section>
