@@ -5,8 +5,12 @@ import Head from 'next/head';
 import Nav from '../../../components/nav';
 import Footer from '../../../components/footer';
 import Projects from '../../../components/projects';
+import { SiDiscord, SiGmail } from 'react-icons/si';
+import Link from 'next/link';
 
 export default function Portfolio() {
+    let tag = "text-sm inline-flex items-center font-sans font-semibold leading-sm px-3 py-1 bg-slate-100 text-sky-500 rounded-full m-1 border-lg border-2 border-blue-400"
+
     return (
         <div>
             <Head>
@@ -24,7 +28,7 @@ export default function Portfolio() {
                             Project Directory
                         </h1>
                         <p className="text-md dark:text-white mb-8">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            This is where all my past projects are displayed! Each project includes a short description about why it is created, what is the use of the project and how it will help new developers to learn coding faster without needing to waste long hours on watching tutorials. If you want to collab on a GitHub project, do contact me through <button onClick={() => { window.location.href = "https://discordapp.com/users/" }}><div className={tag}><SiDiscord className='mr-1' />Discord</div></button>or <button onClick={() => { window.location.href = "mailto:collabs@notedwin.codes" }}><div className={tag}><SiGmail className='mr-1' />Gmail</div></button>!
                         </p>
                     </div>
                     <Projects />

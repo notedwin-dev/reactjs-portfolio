@@ -51,7 +51,7 @@ export default function Nav(icons) {
 
     return (
         <nav className="pt-10 mb-12 flex justify-between" >
-            <h1 className="text-xl font-burtons dark:text-white mr-5" > Edwin Ng </h1>
+            <button onClick={() => { window.location.href = '/en' }}><h1 className="text-xl font-burtons dark:text-white mr-5" > Edwin Ng </h1></button>
             <ul className="flex items-center" >
                 <li>
                     <BsFillMoonStarsFill onClick={() => setDarkMode(darkMode === "dark" ? "light" : "dark")} className="cursor-pointer text-2xl dark:fill-yellow-300" />

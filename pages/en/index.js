@@ -40,7 +40,7 @@ export default function Home() {
             <p className="font-sans text-md leading-8 text-gray-600 dark:text-gray-300">Here are some of the <span className="text-blue-gray-100 dark:text-cyan-500">Skills</span>, <span className="text-blue-gray-100 dark:text-cyan-500">Programming Languages</span> and <span className="text-blue--100 dark:text-cyan-500">Tools</span> that I am familiar with.</p>
           </div>
 
-          <div className="lg:flex gap-8">
+          <div className="grid gap-10 mb-10 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3">
 
             <div className={cards}>
               <IoLogoNodejs className="mx-auto text-5xl text-green-500" />
@@ -51,7 +51,6 @@ export default function Home() {
               <div className={tag}><AiFillGithub className="mr-1" /> Github</div>
               <div className={tag}><SiGit className="mr-1" /> Git</div>
               <div className={tag}><SiReplit className='mr-1' /> Replit</div>
-              <div className={tag}><SiHeroku className='mr-1' /> Heroku</div>
               <div className={tag}><SiVisualstudiocode className="mr-1" /> Visual Studio Code</div>
               <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">JavaScript Modules I&apos;m good at</h2>
               <div className={tag}><SiReact className="mr-1" /> React.js</div>
@@ -76,7 +75,6 @@ export default function Home() {
               <div className={tag}><AiFillGithub className="mr-1" /> Github</div>
               <div className={tag}><SiGit className='mr-1' /> Git</div>
               <div className={tag}><SiReplit className='mr-1' /> Replit</div>
-              <div className={tag}><SiHeroku className='mr-1' /> Heroku</div>
               <div className={tag}><SiIntellijidea className='mr-1' /> IntelliJ</div>
               <div className={tag}><SiVisualstudiocode className='mr-0.5' /> Visual Studio Code</div>
               <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Programming Languages that I&apos;m familiar with</h2>
@@ -96,7 +94,6 @@ export default function Home() {
               <div className={tag}><AiFillGithub className="mr-1" /> Github</div>
               <div className={tag}><SiGit className="mr-1" /> Git</div>
               <div className={tag}><SiReplit className='mr-1' /> Replit</div>
-              <div className={tag}><SiHeroku className='mr-1' /> Heroku</div>
               <div className={tag}><SiVisualstudiocode className="mr-1" /> Visual Studio Code</div>
               <h2 className="font-semibold text-cyan-500 my-2 dark:text-cyan-600">Front-End Development Skills</h2>
               <div className={tag}><SiReact className="mr-1" /> React.js</div>
