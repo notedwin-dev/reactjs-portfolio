@@ -18,7 +18,7 @@ export default function discordJS() {
                 <section className="px-10">
                     <Nav icons="Project" />
                     <div className="text-center mx-10">
-                        <h1 className="font-bold text-2xl text-slate-500 pb-5 dark:text-blue-gray-100">
+                        <h1 className="font-bold text-2xl text-slate-400 pb-5 dark:text-blue-gray-100">
                             Autocode Discord.js
                         </h1>
                         <p className="text-md mb-16 dark:text-white">

@@ -20,7 +20,7 @@ export default function DBDashboard() {
                 <section className="px-10">
                     <Nav icons="Project" />
                     <div className="text-center mx-10">
-                        <h1 className="font-bold text-slate-500 text-2xl pb-5 dark:text-blue-gray-100">
+                        <h1 className="font-bold text-slate-400 text-2xl pb-5 dark:text-blue-gray-100">
                             Discord Bot Dashboard
                         </h1>
                         <p className="text-md mb-16 dark:text-white">
