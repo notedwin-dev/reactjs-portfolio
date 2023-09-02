@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { AiFillGithub, AiFillYoutube, AiFillLinkedin } from 'react-icons/ai';
 import Link from 'next/link';
 import { BsFillFolderFill } from 'react-icons/bs';
-import ToolTip from './Tooltip';
 
 
 export default function About() {
@@ -16,10 +15,10 @@ export default function About() {
             <div className="flex justify-center items-center mx-auto mt-20">
                 <Image src={me} className="mx-auto rounded-full w-80 h-80" alt='' />
             </div>
-            <div className="text-center p-10">
+            <div className="text-center p-8">
                 <h2 className="font-sans text-5xl py-2 text-blue-gray-100 dark:text-cyan-500">Edwin Ng</h2>
                 <h3 className="font-sans text-2xl py-2 text-black dark:text-white">Freelance Full Stack Developer and University Student.</h3>
-                <p className="font-sans leading-8 text-gray-600 dark:text-gray-300">Hello there, My name is Edwin! I am a {(new Date().getFullYear() - 2004)} years old freelance developer who likes to explore and experiment around with Discord-related libraries and projects! I have already completed 10 freelance jobs during the past 6 months!<br></br>
+                <p className="font-sans leading-8 text-gray-600 dark:text-gray-300">Hello there, My name is Edwin! I am a {(new Date().getFullYear() - 2004)} years old freelance developer who likes to explore and experiment around with Discord-related libraries and projects!<br></br>
                     Are you a recruiter? Have a look at my projects by clicking on the <span className={tag}><Link href="/en/projects"><BsFillFolderFill className="cursor-pointer text-xl dark:fill-white" ></BsFillFolderFill></Link></span> button at the top right corner!</p>
             </div>
             <div className="text-3xl flex justify-center gap-10">
