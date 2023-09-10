@@ -24,7 +24,7 @@ export default function DBDashboard() {
                             Discord Bot Dashboard
                         </h1>
                         <p className="text-md mb-16 dark:text-white">
-                            在这个Discord 机器人仪表盘项目里，我设法实现了独特的 MERN 堆栈 —— MongoDB 作为存储服务器信息和配置的数据库； 浏览器 cookie 用于身份验证流程，例如使用 Discord 登录和登出网站； Autocode 的 HTTP(S) 端点 - 让你可以把写好的 HTML 转换成字符串并在 HTML 中使用 JavaScript 的函数 及 编写Node.js的代码，最后再从字符串中缓冲成 HTML （类似于 .ejs 和 Express 组合起来的使用方法） . 该项目也完全用 Node.js 版本 14 编写。
+                            在这个Discord 机器人管理网站的项目里，我设法实现了独特的 MERN 堆栈 —— MongoDB 作为存储服务器信息和配置的数据库； 浏览器 cookie 用于身份验证流程，例如使用 Discord 登录和登出网站； Autocode 的 HTTP(S) 端点 - 让你可以把写好的 HTML 转换成字符串并在 HTML 中使用 JavaScript 的函数 及 编写Node.js的代码，最后再从字符串中缓冲成 HTML （类似于 React 的使用方法） . 该项目在没有制作任何HTML文件的情况下，使用了 Node.js v14 完成了编写。
                         </p>
                         <Image src={dbd1} width={1240} height={720} alt=""></Image>
                         <Image src={dbd2} width={1240} height={720} alt=""></Image>

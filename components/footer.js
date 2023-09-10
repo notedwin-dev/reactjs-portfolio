@@ -5,9 +5,9 @@ import { SiInstagram, SiYoutube, SiGithub } from 'react-icons/si'
 export default function Footer() {
     return (
         <footer className="md:h-40 lg:h-40">
-            <div class="  rounded-xl items-center flex justify-center h-40">
+            <div className="rounded-xl items-center flex justify-center h-40">
                 <div className="flex flex-wrap m-15">
-                    <div class="flex-col relative m-5">
+                    <div className="flex-col relative m-5">
                         <h4 className="font-sans font-bold text-xl dark:text-cyan-500">Quick Links</h4>
                         <ul className="list-none text-sm">
                             <li className="dark:text-white"><Link href="/en/projects">Project Directory</Link></li>

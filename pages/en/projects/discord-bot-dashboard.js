@@ -24,7 +24,7 @@ export default function DBDashboard() {
                             Discord Bot Dashboard
                         </h1>
                         <p className="text-md mb-16 dark:text-white">
-                            In this Discord Bot Dashboard, I managed to implement the unique MERN stack - MongoDB as database for storing server informations and configurations; Browser cookies for authentication flow such as logging in with Discord and logging out; Autocode&apos;s HTTP(S) endpoint that allows you to use JavaScript variables in your HTML and write Node.js codes, buffer the HTML from string and return it as an actual webpage (similar to how .ejs and Express works when combined). The project is also completely written in Node.js version 14.
+                            In this Discord Bot Dashboard, I managed to implement the unique MERN stack - MongoDB as database for storing server informations and configurations; Browser cookies for authentication flow such as logging in with Discord and logging out; Autocode&apos;s HTTP(S) endpoint that allows you to use JavaScript variables in your HTML and write Node.js codes, buffer the HTML from string and return it as an actual webpage (similar to how React works). The project is also completely written in Node.js version 14 without creating any HTML file.
                         </p>
                         <Image src={dbd1} width={1240} height={720} alt=""></Image>
                         <Image src={dbd2} width={1240} height={720} alt=""></Image>

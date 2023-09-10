@@ -25,12 +25,12 @@ export default function Portfolio() {
                             这个作品集 / 个人介绍网页原本是用于学习如何使用HTML、JavaScript 和 CSS 制作网站而构建的. 随着我在 HTML 方面的进步，我设法将网站从一个没有 CSS 的普通网页变成了一个具有漂亮元素显示动画的响应式网站，并展示了我继续提升前端开发技能的能力。 这也变成了<a href="https://autocode.com/notedwin/apps/portfolio-using-html-in-autocode/"><span className="text-blue-gray-100 dark:text-cyan-500">我在Autocode上创建的第一个开源网页模板</span></a> 让大家学习如何在Autocode上利用我的模板并且使用HTML制作属于他们自己的作品集/个人网站。
                         </p>
                         <p className="text-md text-black dark:text-white">
-                            <a href="https://notedwin.co"><span className='text-blue-gray-100 dark:text-cyan-500 dark:text-blue-gray-100'>点击这里</span></a>就可以访问完整的网站啦！
+                            <a href="https://notedwin-dev.github.io/NotEdwin"><span className='text-blue-gray-100 dark:text-cyan-500'> 点击这里 </span></a>就可以访问完整的网站啦！
                         </p>
                     </div>
 
                     <div className="flex justify-center my-8">
-                        <iframe src='https://notedwin.co' width={1240} height={720} name='HTML Portfolio Website' />
+                        <iframe src='https://notedwin-dev.github.io/NotEdwin' width={1240} height={720} name='HTML Portfolio Website' />
                     </div>
 
                 </section>
