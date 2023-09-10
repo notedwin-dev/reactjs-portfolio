@@ -21,7 +21,7 @@ export default function Home() {
 
   useEffect(() => {
     if (localStorage.locale === 'en') {
-      setTimeout(setLanguage('en'), 5000)
+      setLanguage('en')
     } else if (localStorage.locale === 'zh') {
       setLanguage('zh')
     } else if (!('locale' in localStorage)) {
@@ -34,7 +34,8 @@ export default function Home() {
       localStorage.locale = 'zh'
       window.location.href = `/${language}/`
     } else if (language === 'en') {
-      setTimeout(window.location.href = `/${language}/`, 5000)
+      localStorage.locale = 'en'
+      window.location.href = `/${language}/`
     }
   }, [language])
 

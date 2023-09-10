@@ -4,6 +4,7 @@ import { AiFillHome } from 'react-icons/ai';
 //import { HiCodeBracketSquare } from 'react-icons/hi2';
 import Link from 'next/link';
 import ToolTip from '../Tooltip';
+import { useRouter } from 'next/router';
 
 export default function Nav(icons) {
     const getStorage = () => {
@@ -11,6 +12,27 @@ export default function Nav(icons) {
             return localStorage.getItem("theme") || null
         }
     }
+
+    const router = useRouter()
+
+    let languageOptions = [
+        {
+            id: "zh",
+            name: "ZH"
+        },
+        {
+            id: "en",
+            name: "EN"
+        },
+    ]
+
+    const [userLanguage, setUserLanguage] = useState('')
+
+    const handleLanguageChange = (e) => {
+        setUserLanguage(e.target.value)
+        router.push(`/${e.target.value}`)
+    };
+
 
     const [darkMode, setDarkMode] = useState(getStorage);
 
@@ -49,10 +71,29 @@ export default function Nav(icons) {
         }
     }, [darkMode])
 
+    useEffect(() => {
+        if (userLanguage)
+            localStorage.locale = userLanguage
+    }, [userLanguage])
+
     return (
         <nav className="pt-10 mb-12 flex justify-between" >
-            <h1 className="text-xl font-burtons dark:text-white mr-5" > Edwin Ng </h1>
+            <button onClick={() => { window.location.href = '/en' }}><h1 className="text-xl font-burtons dark:text-white mr-5" > Edwin Ng </h1></button>
             <ul className="flex items-center" >
+                <li className='pr-4'>
+                    <select
+                        onChange={handleLanguageChange}
+                        value={userLanguage}
+                        defaultValue='ZH'
+                        className='bg-inherit text-white outline-none'
+                    >
+                        {languageOptions.map(({ id, name }) => (
+                            <option key={id} value={id} className='bg-inherit text-black'>
+                                {name}
+                            </option>
+                        ))}
+                    </select>
+                </li>
                 <li>
                     <BsFillMoonStarsFill onClick={() => setDarkMode(darkMode === "dark" ? "light" : "dark")} className="cursor-pointer text-2xl dark:fill-yellow-300" />
                 </li>
