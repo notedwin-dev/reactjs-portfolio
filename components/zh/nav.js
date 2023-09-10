@@ -85,7 +85,7 @@ export default function Nav(icons) {
                         onChange={handleLanguageChange}
                         value={userLanguage}
                         defaultValue='ZH'
-                        className='bg-inherit text-white outline-none'
+                        className='bg-inherit text-black dark:text-white outline-none'
                     >
                         {languageOptions.map(({ id, name }) => (
                             <option key={id} value={id} className='bg-inherit text-black'>
