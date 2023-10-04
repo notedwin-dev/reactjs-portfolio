@@ -24,12 +24,12 @@ export default function Portfolio() {
                             This Portfolio / Personal Website was initially built to learn how to make a website using HTML, JavaScript and CSS. As I&apos;m getting better at HTML, I managed to get the website from a plain no CSS webpage to a responsive website with beautiful element reveal animations and demonstrate my ability to continue to upskill in Front-end Development. It also gave me the opportunity to create an <a href="https://autocode.com/notedwin/apps/portfolio-using-html-in-autocode/"><span className="text-blue-gray-100 dark:text-cyan-500">open source app on Autocode</span></a> to show others how to make a beautiful portfolio website just like mine.
                         </p>
                         <p className="dark:text-white">
-                            Visit the full site <a href="https://notedwin-dev.github.io/NotEdwin"><span className='text-blue-gray-100 dark:text-cyan-500'>here!</span></a>
+                            Visit the full site <a href="https://notedwin-dev.github.io/HTML-Portfolio"><span className='text-blue-gray-100 dark:text-cyan-500'>here!</span></a>
                         </p>
                     </div>
 
                     <div className="flex justify-center my-8">
-                        <iframe src='https://notedwin-dev.github.io/NotEdwin' width={1240} height={720} name='HTML Portfolio Website' />
+                        <iframe src='https://notedwin-dev.github.io/HTML-Portfolio' width={1240} height={720} name='HTML Portfolio Website' />
                     </div>
 
                 </section>
