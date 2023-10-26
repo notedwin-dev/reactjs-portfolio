@@ -41,11 +41,9 @@ export default function DiscordWS() {
             </p>
             <div className="mb-3">
               <Link href="https://github.com/Edwin15857/discord-ws">
-                <Link>
-                  <h1 className="font-bold text-2xl text-slate-500 pb-2">
-                    Discord WebSocket Github Repository
-                  </h1>
-                </Link>
+                <h1 className="font-bold text-2xl text-slate-500 pb-2">
+                  Discord WebSocket Github Repository
+                </h1>
               </Link>
 
               <Image src={ws} alt=""></Image>
