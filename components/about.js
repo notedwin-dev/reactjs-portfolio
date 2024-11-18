@@ -1,4 +1,4 @@
-import me from "../public/me.jpg";
+myimport me from "../public/me.jpg";
 import Autocode from "../public/autocode.svg";
 import Image from "next/image";
 import { AiFillGithub, AiFillYoutube, AiFillLinkedin } from "react-icons/ai";
@@ -40,7 +40,7 @@ export default function About() {
           <Image src={Autocode} alt="" />
         </Link>
 
-        <Link href="https://github.com/Edwin15857" target="blank">
+        <Link href="https://github.com/notedwin-dev" target="blank">
           <AiFillGithub className="dark:fill-white" />
         </Link>
 
