@@ -33,7 +33,7 @@ export default function Footer() {
             </h4>
             <ul className="list-none text-sm">
               <li className="dark:text-white">
-                <Link href="https://github.com/Edwin15857" target="blank">
+                <Link href="https://github.com/notedwin-dev" target="blank">
                   GitHub
                 </Link>
               </li>
