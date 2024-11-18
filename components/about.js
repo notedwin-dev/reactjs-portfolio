@@ -1,4 +1,4 @@
-myimport me from "../public/me.jpg";
+import me from "../public/me.jpg";
 import Autocode from "../public/autocode.svg";
 import Image from "next/image";
 import { AiFillGithub, AiFillYoutube, AiFillLinkedin } from "react-icons/ai";
