@@ -27,7 +27,7 @@ export default function About() {
           <Image src={Autocode} alt="" />
         </Link>
 
-        <Link href="https://github.com/Edwin15857" target="blank">
+        <Link href="https://github.com/notedwin-dev" target="blank">
           <AiFillGithub className="dark:fill-white" />
         </Link>
 
