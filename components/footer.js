@@ -16,7 +16,7 @@ export default function Footer() {
                 <Link href="/en/projects">Project Directory</Link>
               </li>
               <li className="dark:text-white">
-                <Link href="https://notedwin.co" target="blank">
+                <Link href="https://notedwin-dev.github.io/HTML-Portfolio/" target="blank">
                   Portfolio Website
                 </Link>
               </li>
